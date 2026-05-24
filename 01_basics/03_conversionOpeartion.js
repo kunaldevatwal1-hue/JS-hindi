@@ -32,3 +32,17 @@ let stringcon= String(sString)
 console.log(stringcon)
 
 console.log(typeof  stringcon)
+
+/****************** Operations ******************* */
+
+let str1="kunal"
+let str2=" dewatwal"
+console.log(str1+str2)
+
+console.log("1" + 2 + 3 )
+
+console.log(1+2+"2")
+
+console.log(1+"2")
+
+console.log(true)
