@@ -38,3 +38,5 @@ console.log("return type of bigint is" ,typeof bigNumber)
 console.log("return type of symbol is" ,typeof id)
 
 console.log("return type of array is" ,typeof hero )
+
+// https://262.ecma-international.org/5.1/#sec-11.4.3
