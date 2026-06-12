@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>htnml Events </title>
+</head>
+<body style="background-color: #414141; color: aliceblue;">
+    <h1>Kunal Dewatwal</h1>
+    
+    <button id="start">start</button>
+    <button id="stop">stop</button>
+</body>
+<script>
+    const sayDate=function(){
+        console.log("kunal",Date.now())
+    }
+    let intervalId;
+   document.querySelector('#start').addEventListener('click',function(){
+    if(!intervalId){
+        intervalId = setInterval(sayDate,2000) 
+        // intervalId()
+        console.log("in start")
+    }
+        
+    })
+    
+
+    
+
+    document.querySelector('#stop').addEventListener('click',
+    function(){ 
+        console.log("in stop function")
+        clearInterval(intervalId)
+        intervalId=null
+    }
+    )
+
+   
+</script>
+</html>
